@@ -21,3 +21,15 @@ def diagonalDifference(arr):
 
 print(diagonalDifference([[1,2,3],[4,5,6],[7,8,9]]))
 
+# def diagonalDifference(arr):
+#     left_to_right = 0
+#     right_to_left = 0
+#     n = len(arr)
+#     for r in range(n):
+#         left_to_right += arr[r][r]
+#         right_to_left += arr[r][n-r-1]
+#     print("Left to right diagonal sum:", left_to_right)
+#     print("Right to left diagonal sum:", right_to_left)
+#     return abs(left_to_right - right_to_left)
+
+# print(diagonalDifference([[1,2,3],[4,5,6],[9,8,9]]))
