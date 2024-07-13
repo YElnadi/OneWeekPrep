@@ -8,9 +8,6 @@ def cat_dog(s):
     cat_counter = 0
     dog_counter = 0
 
-    if len(s) < 6:
-        return False
-
     for i in range(len(s)-2):
         if s[i:i+3] == 'cat':
             cat_counter += 1
