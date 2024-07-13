@@ -16,6 +16,9 @@ def cat_dog(s):
             cat_counter += 1
         elif s[i:i+3] == 'dog':
             dog_counter += 1
-    if dog_counter == cat_counter:
-        return True
-    return False
+
+    return cat_counter == dog_counter
+
+
+print(cat_dog('catdog'))
+print(cat_dog('catcat'))
