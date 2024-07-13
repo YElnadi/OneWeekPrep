@@ -5,3 +5,17 @@
 # cat_dog('1cat1cadodog') → True
 
 def cat_dog(s):
+    cat_counter = 0
+    dog_counter = 0
+
+    if len(s) < 6:
+        return False
+
+    for i in range(len(s)-2):
+        if s[i:i+3] == 'cat':
+            cat_counter += 1
+        elif s[i:i+3] == 'dog':
+            dog_counter += 1
+    if dog_counter == cat_counter:
+        return True
+    return False
