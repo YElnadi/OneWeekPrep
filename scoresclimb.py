@@ -20,3 +20,4 @@ def scoresClump(scores):
 print(scoresClump([3, 4, 5])) #→ true
 print(scoresClump([3, 4, 6])) #→ false
 print(scoresClump([1, 3, 5, 5])) #→ true
+
