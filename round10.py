@@ -6,3 +6,23 @@
 # round_sum(12, 13, 14) → 30
 # round_sum(6, 4, 4) → 10
 
+import math
+
+def round_sum(a,b,c):
+    rounded_sum = 0
+    for num in [a,b,c]:
+        if num % 10 >=5:
+            rounded = math.ceil(num/10) * 10
+            rounded_sum += rounded
+        else:
+            rounded = math.floor(num/10) * 10
+            rounded_sum += rounded
+
+    return rounded_sum
+
+
+
+
+print(round_sum(16, 17, 18)) #→ 60
+print(round_sum(12, 13, 14)) #→ 30
+print(round_sum(6, 4, 4)) #→ 10
